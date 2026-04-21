@@ -3,113 +3,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ana Weyak — Lyrics by Abu Sayed</title>
-    <meta name="description" content="Song Ana Weyak Lyric يا روحي في الليل تنادينور العشق في قلبي باديأنا وياك طول الزمانحبك أماني والمكانतेरी यादों में धड़के ये दिल मेरातू ही सुबह है तू ...">
+    <title>Ana Weyak — Original Song by Abu Sayed</title>
+    <meta name="description" content="Official lyrics for 'Ana Weyak', an original song by Abu Sayed. Explore the storytelling and emotions of this unique composition.">
     
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ana Weyak — Original Lyrics by Abu Sayed">
+    <meta property="og:description" content="Explore the official lyrics and storytelling of 'Ana Weyak' by Bangladeshi songwriter Abu Sayed.">
+    <meta property="og:type" content="music.song">
+    <meta property="og:url" content="https://github.com/ImAbuSayed/ana-weyak">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicComposition",
+  "name": "Ana Weyak",
+  "composer": {
+    "@type": "Person",
+    "name": "Abu Sayed",
+    "url": "https://abusayed.com.bd",
+    "sameAs": [
+      "https://www.facebook.com/AbuSayed.TheCultOfPersonality",
+      "https://github.com/ImAbuSayed",
+      "https://music.abusayed.com.bd",
+      "https://www.youtube.com/@AbuSayedMusic",
+      "https://open.spotify.com/artist/6vnjuWLcV3nHwIFeozztMv",
+      "https://music.apple.com/ae/artist/abu-sayed/1622976966",
+      "https://www.tiktok.com/@imabusayed",
+      "https://www.instagram.com/AbuSayedMusic/",
+      "https://www.linkedin.com/in/imabusayed/",
+      "https://www.x.com/AbuSayedMusic",
+      "https://www.facebook.com/AbuSayedMusic"
+    ]
+  },
+  "lyricist": {
+    "@id": "https://abusayed.com.bd#person"
+  },
+  "lyrics": {
+    "@type": "CreativeWork",
+    "text": "[Clean lyric will be pushed here]"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Abu Sayed Music"
+  }
+}
+    </script>
+
     <style>
         :root {
-            --bg: #0f172a;
-            --card: #1e293b;
-            --accent: #38bdf8;
-            --text: #f1f5f9;
-            --muted: #94a3b8;
+            --bg-color: #0b0e14;
+            --card-bg: #161b22;
+            --accent-color: #58a6ff;
+            --accent-glow: rgba(88, 166, 255, 0.15);
+            --text-main: #c9d1d9;
+            --text-muted: #8b949e;
+            --heading-color: #ffffff;
         }
         body {
             font-family: 'Outfit', sans-serif;
-            background: var(--bg);
-            color: var(--text);
+            background-color: var(--bg-color);
+            color: var(--text-main);
             margin: 0;
-            padding: 40px 20px;
-            line-height: 1.8;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
         }
         .container {
-            max-width: 700px;
+            max-width: 800px;
             width: 100%;
-            background: var(--card);
-            padding: 50px;
-            border-radius: 24px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            background: var(--card-bg);
+            padding: 40px 60px;
+            border-radius: 32px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.5), 0 0 100px var(--accent-glow);
+            border: 1px solid rgba(255,255,255,0.08);
+            margin: 40px 0;
+            position: relative;
+            overflow: hidden;
         }
-        .featured-img {
-            width: 100%;
-            border-radius: 16px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 4px;
+            background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
         }
         h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            margin: 0 0 10px 0;
-            line-height: 1.1;
+            font-size: 3.5rem;
+            color: var(--heading-color);
+            margin: 10px 0;
+            letter-spacing: -1px;
         }
-        .meta {
-            color: var(--accent);
-            font-weight: 600;
+        .artist {
             text-transform: uppercase;
-            letter-spacing: 2px;
-            font-size: 0.8rem;
+            letter-spacing: 4px;
+            font-weight: 600;
+            color: var(--accent-color);
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+        .controls {
+            display: flex;
+            justify-content: center;
             margin-bottom: 30px;
         }
-        .excerpt {
-            font-style: italic;
-            color: var(--muted);
-            border-left: 3px solid var(--accent);
-            padding-left: 20px;
-            margin-bottom: 40px;
+        .btn-speak {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            color: var(--text-main);
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: inherit;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+        .btn-speak:hover {
+            background: var(--accent-color);
+            color: #000;
+            transform: translateY(-2px);
         }
         .lyrics {
-            font-size: 1.25rem;
+            font-size: 1.3rem;
             white-space: pre-wrap;
-            margin-bottom: 50px;
+            color: var(--text-main);
+            text-align: center;
+            margin-bottom: 60px;
+            font-weight: 300;
+            animation: fadeIn 1.2s ease-out;
         }
-        .links {
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.95rem;
             border-top: 1px solid rgba(255,255,255,0.1);
-            padding-top: 30px;
+            padding-top: 40px;
+        }
+        .social-links {
+            margin: 20px 0;
             display: flex;
-            gap: 20px;
+            justify-content: center;
+            gap: 25px;
             flex-wrap: wrap;
         }
-        .btn {
+        .social-links a {
+            color: var(--text-main);
             text-decoration: none;
-            padding: 12px 24px;
-            border-radius: 12px;
             font-weight: 600;
+            font-size: 0.9rem;
+            padding: 5px 12px;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.03);
             transition: all 0.2s;
         }
-        .btn-primary { background: var(--accent); color: #000; }
-        .btn-secondary { background: rgba(255,255,255,0.05); color: var(--text); border: 1px solid rgba(255,255,255,0.1); }
-        .btn:hover { transform: translateY(-2px); filter: brightness(1.1); }
-        footer {
-            margin-top: 50px;
-            text-align: center;
-            font-size: 0.9rem;
-            color: var(--muted);
+        .social-links a:hover {
+            color: var(--accent-color);
+            background: rgba(88, 166, 255, 0.1);
+        }
+        .copyright {
+            margin-top: 30px;
+            opacity: 0.6;
+            font-size: 0.8rem;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 600px) {
+            .container { padding: 30px 20px; }
+            h1 { font-size: 2.2rem; }
+            .lyrics { font-size: 1.1rem; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="https://abusayed.com.bd/wp-content/uploads/2026/04/Ana-Weyak.min_.webp" alt="Ana Weyak" class="featured-img">
-        <div class="meta">Original Composition</div>
-        <h1>Ana Weyak</h1>
-        <div class="excerpt">Song Ana Weyak Lyric يا روحي في الليل تنادينور العشق في قلبي باديأنا وياك طول الزمانحبك أماني والمكانतेरी यादों में धड़के ये दिल मेरातू ही सुबह है तू ही सवेरासाँसों में घुली है तेरी ही नमीतेरे बिना है ये दुनिया थमीEvery heartbeat echoes your name out loudWe are a fire burning through the cloudHold my […]</div>
-        
-        <div class="lyrics">Song<br>Ana Weyak<br>Lyric<br>يا روحي في الليل تنادي<br>نور العشق في قلبي بادي<br>أنا وياك طول الزمان<br>حبك أماني والمكان<br>तेरी यादों में धड़के ये दिल मेरा<br>तू ही सुबह है तू ही सवेरा<br>साँसों में घुली है तेरी ही नमी<br>तेरे बिना है ये दुनिया थमी<br>Every heartbeat echoes your name out loud<br>We are a fire burning through the cloud<br>Hold my hand and never let me go<br>You are the only truth I want to know<br>প্রথম যেদিন দেখেছি ওই দুটি চোখ<br>ভুলেছি আমার ছিলো যতো শোক<br>বুকের ভেতর অচেনা এক শিহরণ<br>তুমি আমার বেঁচে থাকার কারণ<br>पास आके भी क्यूँ हैं ये दूरियाँ<br>कैसी हैं ये इश्क़ की मजबूरियाँ<br>आँखों से पढ़ ले मेरी दास्तान<br>तू ही ज़मीं है तू ही आसमान<br>তুমি আমার মনেরই আয়না<br>তোমায় ছাড়া আর কিছু চাই না<br>ভালোবাসার মধুর এই বাঁধন<br>জনম জনম থেকো আমার আপন<br>نار الشوق تحرق كل المسافات<br>بين يديك أنسى كل الآهات<br>أنت النبض وأنت الحياة<br>في عيونك أجد طوق النجاة<br>ਤੇਰੇ ਬਾਝੋਂ ਦਿਲ ਨਹੀਓਂ ਲੱਗਦਾ ਮੇਰਾ<br>ਤੂੰ ਹੀ ਤਾ ਹੈ ਚੰਨ ਵੇ ਚਾਰ ਚੁਫੇਰਾ<br>ਇਸ਼ਕ ਤੇਰੇ ਵਿੱਚ ਹੋਇਆ ਮੈਂ ਮਲੰਗ<br>ਚੜ੍ਹਿਆ ਮੈਨੂੰ ਤੇਰੇ ਪਿਆਰ ਦਾ ਰੰਗ<br>أنا وياك في الحب نذوب<br>أنت وحدك من بين القلوب<br>يا شمس عمري في كل نهار<br>معك أنسى كل الأسرار<br>डर लगता है खो ना दूँ मैं तुझे<br>इन बाहों में उम्र भर तू रहे<br>साया तेरा मेरा हमसफ़र है<br>तेरे इश्क़ का ही मुझपे असर है<br>كل دقة في قلبي تقول أهواك<br>لا معنى لأيامي من لولاك<br>روحي تعانق روحك في السماء<br>أنت دائي وأنت الدواء<br>তুমি আমার মনেরই আয়না<br>তোমায় ছাড়া আর কিছু চাই না<br>ভালোবাসার মধুর এই বাঁধন<br>জনম জনম থেকো আমার আপন<br>ਅੱਖੀਆਂ ਨੂੰ ਰਹਿੰਦੀ ਤੇਰੀ ਹੀ ਉਡੀਕ<br>ਆਜਾ ਸੋਹਣਿਆ ਕਰ ਮੈਨੂੰ ਠੀਕ<br>ਤੇਰੀਆਂ ਯਾਦਾਂ ਦਾ ਆਉਂਦਾ ਹੜ੍ਹ<br>ਸਦਾ ਲਈ ਤੂੰ ਮੇਰਾ ਹੱਥ ਫੜ<br>Step into the shadows where the fire burns bright<br>Lost in the rhythm and the heat of the night<br>In every heartbeat, Sayed remains alive.. Sayed… Sayed…..<br>Whispers in the silence make the shadows dive<br>Taste the midnight echo dancing on the skin.. Sayed…..<br>Feel the burning hunger let the spark begin<br>तू ही मेरी जान है तू ही जहान<br>तेरे लिए है ये धड़कन कुर्बान<br>मेरे इश्क़ की तू ही पहचान है<br>तू ही ज़मीं और तू आसमान है<br>أنا وياك لآخر الزمان<br>في حضنك أجد كل الأمان<br>يا حلمي الجميل لا تغيب<br>أنت في روحي أغلى حبيب</div>
-        
-        <div class="links">
-            <a href="https://abusayed.com.bd/projects/ana-weyak/" class="btn btn-primary" target="_blank">View on Website</a>
-            <a href="https://github.com/ImAbuSayed/ana-weyak" class="btn btn-secondary" target="_blank">GitHub Repo</a>
+        <header>
+            <div class="artist">Official Song Lyrics</div>
+            <h1>Ana Weyak</h1>
+            <div style="color: var(--text-muted); font-style: italic;">Original Composition by Abu Sayed</div>
+        </header>
+
+        <div class="controls">
+            <button class="btn-speak" id="speakBtn">
+                <span id="speakIcon">🔊</span> <span id="speakText">Read Aloud</span>
+            </button>
         </div>
-        
+
+        <article class="lyrics" id="lyricText">
+            [Clean lyric will be pushed here]
+        </article>
+
         <footer>
-            <p>© Abu Sayed — <a href="https://abusayed.com.bd" style="color:inherit">abusayed.com.bd</a></p>
+            <div class="social-links">
+                <a href="https://abusayed.com.bd" target="_blank">Personal Website</a>
+                <a href="https://music.abusayed.com.bd" target="_blank">Music Portal</a>
+                <a href="https://www.facebook.com/AbuSayed.TheCultOfPersonality" target="_blank">Facebook</a>
+                <a href="https://www.youtube.com/@AbuSayedMusic" target="_blank">YouTube</a>
+                <a href="https://www.instagram.com/AbuSayedMusic/" target="_blank">Instagram</a>
+                <a href="https://www.tiktok.com/@imabusayed" target="_blank">TikTok</a>
+                <a href="https://www.x.com/AbuSayedMusic" target="_blank">X</a>
+                <a href="https://www.linkedin.com/in/imabusayed/" target="_blank">LinkedIn</a>
+                <a href="https://open.spotify.com/artist/6vnjuWLcV3nHwIFeozztMv" target="_blank">Spotify</a>
+                <a href="https://music.apple.com/ae/artist/abu-sayed/1622976966" target="_blank">Apple Music</a>
+                <a href="https://github.com/ImAbuSayed/ana-weyak" target="_blank">Source Repository</a>
+                <a href="https://github.com/ImAbuSayed/ana-weyak/blob/main/LICENSE.md" target="_blank">License</a>
+            </div>
+            
+            <p>This work is the original intellectual property of Abu Sayed.</p>
+            
+            <div class="copyright">
+                &copy; 2026 Abu Sayed. All Rights Reserved.
+            </div>
         </footer>
     </div>
+
+    <script>
+        const btn = document.getElementById('speakBtn');
+        const textElement = document.getElementById('lyricText');
+        const icon = document.getElementById('speakIcon');
+        const label = document.getElementById('speakText');
+        
+        let speaking = false;
+        let synth = window.speechSynthesis;
+        let utterance = null;
+
+        btn.onclick = () => {
+            if (speaking) {
+                synth.cancel();
+                speaking = false;
+                icon.innerText = '🔊';
+                label.innerText = 'Read Aloud';
+            } else {
+                utterance = new SpeechSynthesisUtterance(textElement.innerText);
+                // Try to find a nice English voice
+                const voices = synth.getVoices();
+                const engVoice = voices.find(v => v.lang.startsWith('en') && v.name.includes('Google'));
+                if (engVoice) utterance.voice = engVoice;
+                
+                utterance.rate = 0.9;
+                utterance.onend = () => {
+                    speaking = false;
+                    icon.innerText = '🔊';
+                    label.innerText = 'Read Aloud';
+                };
+                
+                synth.speak(utterance);
+                speaking = true;
+                icon.innerText = '⏹';
+                label.innerText = 'Stop Reading';
+            }
+        };
+        
+        // Pre-load voices
+        window.speechSynthesis.onvoiceschanged = () => { synth.getVoices(); };
+    </script>
 </body>
 </html>
