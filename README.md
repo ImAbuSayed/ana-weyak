@@ -18,7 +18,10 @@
 
 ## Excerpt
 
-> [Clean lyric will be pushed here]
+> يا حبيبي أنا وياك
+> في ليالي الشوق أهواك
+> خذني في حضنك لقاك
+> قلبي ينبض في سماك
 > ...
 
 📄 **[View Full Lyrics →](./lyrics.txt)**
